@@ -12,6 +12,7 @@ body {
   li{
   background:url("a.jpg");background-repeat: no-repeat;background-size: cover;     
                 margin-left:400px;
+                margin-top: 100px;
                 padding:100px;
                 height: 80vh;
                 width: 100vh;
@@ -62,26 +63,29 @@ body {
   color: white;
 }
 
-            @media screen and (min-width:320px )  {
-
- body {
-     background-color: aqua;
+@media screen and (min-width:320px ){
+body {
+     background-color: rgb(44, 55, 55);
      li{
   background:url("a.jpg");background-repeat: no-repeat;background-size: cover;     
-                border:5px solid black;
-                box-sizing:border-box;
-            }
-}
+                border:5px solid rgb(74, 159, 192);
+                box-sizing:content-box;
+        }
+    }
 }
 
 /*  Tablet,ipad      */    
 
-@media Screen and (min-width:768px) and (max-width:1024px){
+@media Screen and (min-width:868px){
 body {
      background-color: rgb(177, 48, 48);
      li{
      background:url("a.jpg");background-repeat: no-repeat;background-size: cover;
-                border:5px solid blac
+     margin-left: 300px;
+     height: 500px;
+     width:500px;
+                border:5px solid black;
+                box-sizing: content-box;
      }
 }
 }
@@ -90,9 +94,12 @@ body {
 
 @media Screen and (min-width:1224px) {
 body {
-     background-color: rgb(48, 151, 8);
+     background-color: rgb(58, 129, 30);
      li{
   background:url("a.jpg");background-repeat: no-repeat;background-size: cover; 
+  margin-left: 300px;
+  height: 500px;
+  width: 600px;
                 border:5px solid black;
                 box-sizing:border-box;
             }
@@ -102,39 +109,63 @@ body {
 /* Large Screens---------  */
 @media Screen and (min-width:1500px) {
 body {
-     background-color: rgb(101, 51, 208);
+     background-color: rgb(61, 140, 158);
+     
      li{
-  background:url("a.jpg");background-repeat: no-repeat;background-size: cover;     
-                border:5px solid black;
+  background:url("a.jpg");background-repeat: no-repeat;background-size: cover;  
+  margin-left: 400px;
+  height: 500px; 
+  width:700px;  
+  border:5px solid black;
                 box-sizing:border-box;
             }
 }
 }
 </style>
+<script>
+  // User Validations
+function loginValidation() {
+      // Ramesh
+var uname = document.myform.username.value;
+       //Ramesh@123
+var password = document.myform.password.value;
+      if(uname==null || uname=="") {
+        alert("Name cant be blank")
+        return false; 
+     } else if (password.length<6){
+        alert("Password Must be 6 letters")
+        return false;
+     } 
+     else{
+     return true      
+     }           
+  }           
+</script>
 </head>
 <body>
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="home" class="active"><CENTER><H1>TOURISM</H1></CENTER></a>
+  <a href="home" class="active"><CENTER><H1>HOLIDAY TRIP </H1></CENTER></a>
   <div id="myLinks">
     <a href="Home.html">HOME</a>
     <a href="register.html">REGISTER</a>
     <a href="loginpage.html">LOGIN</a>
-    <a href="about us.html">ABOUT US</a>
+    <a href="ABOUT US.html">ABOUT US</a>
     <a href="contact us.html">CONTACT US</a>
-    <a href="services.html">SERVICES</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div><br>
+<form name="myform" action="login success.html" 	onsubmit="return loginValidation(this)">
 <li><center>
   <H1>LOGIN PAGE</H1>
-<h3>USER NAME:</h3><input type="text" name="name"><br>
-<H3>PASSWORD:</H3><input type="pass" name="pass"><br><BR>
+<h3>USER NAME:</h3><input type="text" name="username"><br>
+<H3>PASSWORD:</H3><input type="pass" name="password"><br><BR>
 <input type="submit"></center>
 </li>
+</form>
 <script>
 function myFunction() {
   var x = document.getElementById("myLinks");
