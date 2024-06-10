@@ -1,47 +1,114 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>UI PAGES</title>
-        <style>
-            BODY{
-                background:url("leaf8.jpg");
-                background-repeat: no-repeat;
-                background-size:cover;
-                margin-left: 600;
-                margin-top: 50;
-                padding:1px;
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position:inherit;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+li{
+                background:url("globe.jpg");background-repeat: no-repeat;background-size: cover;
+                color: aliceblue;
+                margin-left:400px;
+                padding:0px;
                 height: 80vh;
-                width: 50vh;
+                width: 100vh;
                 border:5px solid black;
-                box-sizing:calc(5);
-                
+                box-sizing:border-box;
             }
-        </style>
-    </head>
-    <BODY>
-        <FORM ACTION="login page.html">
-            <CENTER><br><br>
-               <h2>CREATE AN ACCOUNT</h2><BR>
-                FIRST NAME:<input type="text" name="first name"autofocus><br>
-                EMAIL:<input type="email" name="EMAIL"><br>
-                PHONE NUMBER:<input type="tel" name="M number" pattern="[0-9]{10}"><br>
-                DATE:<input type="date"><br>
-                what is your gender?<br>
-                <input type="radio" name="male" value="m">  MALE<BR>
-                <input type="radio" name="FEmale" value="m">FEMALE<BR>
-                <input type="radio" name="OTHER" value="m"> OTHER<BR>
-                Address:<br>
-                <textarea name="my test" cols="15" rows="3">
-                </textarea><br>
-                Select state:<br>
-                <SELECT>
-                <option value="Andhra pradesh">ANDHRA PRADESH</option>
-                <option value="BIHAR">BIHAR</option>
-                <option value="GOA">GOA</option>
-                <option value="MAHARASTA">MAHARASTRA</option>
-            </SELECT><br>
-            USERNAME:<input type="TEXT" name="c"     ><br>
-            PASSWORD:<input type="password" name="c++"> <BR>
-            <INPUT TYPE="submit">
-                    </FORM>
-    </BODY>
+</style>
+</head>
+<body>
+    
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="home" class="active"><CENTER><H1>TOURISM</H1></CENTER></a>
+  <div id="myLinks">
+    <a href="Home.html">HOME</a>
+    <a href="register.html">REGISTER</a>
+    <a href="Login.html">LOGIN</a>
+    <a href="about us.html">ABOUT US</a>
+    <a href="contact us.html">CONTACT US</a>
+    <a href="services.html">SERVICES</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div><br>
+<li><CENTER><br><br>
+    <h2>CREATE AN ACCOUNT</h2><BR>
+     FIRST NAME:<input type="text" name="first name"autofocus><br>
+     EMAIL:<input type="email" name="EMAIL"><br>
+     PHONE NUMBER:<input type="tel" name="M number" pattern="[0-9]{10}"><br>
+     DATE:<input type="date"><br>
+     what is your gender?<br>
+     <input type="radio" name="male" value="m">  MALE<BR>
+     <input type="radio" name="FEmale" value="m">FEMALE<BR>
+     <input type="radio" name="OTHER" value="m"> OTHER<BR>
+     Address:<br>
+     <textarea name="my test" cols="15" rows="3">
+     </textarea><br>
+     Select state:<br>
+     <SELECT>
+     <option value="Andhra pradesh">ANDHRA PRADESH</option>
+     <option value="BIHAR">BIHAR</option>
+     <option value="GOA">GOA</option>
+     <option value="MAHARASTA">MAHARASTRA</option>
+ </SELECT><br>
+ USERNAME:<input type="TEXT" name="c"     ><br>
+ PASSWORD:<input type="password" name="c++"> <BR>
+ <INPUT TYPE="submit">
+</CENTER>
+</li>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
 </html>

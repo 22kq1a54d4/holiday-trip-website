@@ -9,6 +9,15 @@ body {
 }
 
 .container {
+  li{
+  background:url("a.jpg");background-repeat: no-repeat;background-size: cover;     
+                margin-left:400px;
+                padding:100px;
+                height: 80vh;
+                width: 100vh;
+                border:5px solid black;
+                box-sizing:border-box;
+            }
   max-width: 480px;
   margin: auto;
   background-color: #555;
@@ -52,16 +61,55 @@ body {
   background-color: #04AA6D;
   color: white;
 }
-li{
-                background:url("b.jpg");background-repeat: no-repeat;background-size: cover;
-                color: rgb(7, 7, 7);
-                margin-left:400px;
-                padding:0px;
-                height: 80vh;
-                width: 100vh;
+
+            @media screen and (min-width:320px )  {
+
+ body {
+     background-color: aqua;
+     li{
+  background:url("a.jpg");background-repeat: no-repeat;background-size: cover;     
                 border:5px solid black;
                 box-sizing:border-box;
             }
+}
+}
+
+/*  Tablet,ipad      */    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: rgb(177, 48, 48);
+     li{
+     background:url("a.jpg");background-repeat: no-repeat;background-size: cover;
+                border:5px solid blac
+     }
+}
+}
+
+/* Desktops and Laptops asfsdf     */    
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: rgb(48, 151, 8);
+     li{
+  background:url("a.jpg");background-repeat: no-repeat;background-size: cover; 
+                border:5px solid black;
+                box-sizing:border-box;
+            }
+}
+}
+
+/* Large Screens---------  */
+@media Screen and (min-width:1500px) {
+body {
+     background-color: rgb(101, 51, 208);
+     li{
+  background:url("a.jpg");background-repeat: no-repeat;background-size: cover;     
+                border:5px solid black;
+                box-sizing:border-box;
+            }
+}
+}
 </style>
 </head>
 <body>
@@ -72,7 +120,7 @@ li{
   <div id="myLinks">
     <a href="Home.html">HOME</a>
     <a href="register.html">REGISTER</a>
-    <a href="Login.html">LOGIN</a>
+    <a href="loginpage.html">LOGIN</a>
     <a href="about us.html">ABOUT US</a>
     <a href="contact us.html">CONTACT US</a>
     <a href="services.html">SERVICES</a>
@@ -80,14 +128,13 @@ li{
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div>
-    <li><center>
-    <h1>CONTACT US</h1>
-    <h3>FIRST NAME:</h3><input type="text" name="first name">  <br>
-    <h3>EMAIL:</h3><input type="email" name="EMAIL"><br>
-    <h3>PHONE NUMBER:</h3><input type="NUMBER" name="M number"><br>
-    <h3>MESSAGE:</h3><input type="text" name="message"><br></center>
-    </li>
+</div><br>
+<li><center>
+  <H1>LOGIN PAGE</H1>
+<h3>USER NAME:</h3><input type="text" name="name"><br>
+<H3>PASSWORD:</H3><input type="pass" name="pass"><br><BR>
+<input type="submit"></center>
+</li>
 <script>
 function myFunction() {
   var x = document.getElementById("myLinks");
