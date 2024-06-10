@@ -60,47 +60,58 @@ li{
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="home" class="active"><CENTER><H1>TOURISM</H1></CENTER></a>
+  <a href="home" class="active"><CENTER><H1>HOLIDAY TRIP</H1></CENTER></a>
   <div id="myLinks">
     <a href="Home.html">HOME</a>
     <a href="register.html">REGISTER</a>
     <a href="Login.html">LOGIN</a>
-    <a href="about us.html">ABOUT US</a>
+    <a href="ABOUT US.html">ABOUT US</a>
     <a href="contact us.html">CONTACT US</a>
-    <a href="services.html">SERVICES</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div><br>
+<form name="myform" action="loginpage.html" 	onsubmit="return loginValidation(this)">
 <li><CENTER><br><br>
     <h2>CREATE AN ACCOUNT</h2><BR>
      FIRST NAME:<input type="text" name="first name"autofocus><br>
      EMAIL:<input type="email" name="EMAIL"><br>
      PHONE NUMBER:<input type="tel" name="M number" pattern="[0-9]{10}"><br>
-     DATE:<input type="date"><br>
+     <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br>
      what is your gender?<br>
-     <input type="radio" name="male" value="m">  MALE<BR>
-     <input type="radio" name="FEmale" value="m">FEMALE<BR>
-     <input type="radio" name="OTHER" value="m"> OTHER<BR>
+      <label>
+        <input type="radio" name="gender" value="male"> Male
+      </label><br>
+  
+      <label>
+        <input type="radio" name="gender" value="female"> Female
+      </label><br>
+  
+      <label>
+        <input type="radio" name="gender" value="other"> Other
+      </label><br>
      Address:<br>
      <textarea name="my test" cols="15" rows="3">
      </textarea><br>
-     Select state:<br>
-     <SELECT>
-     <option value="Andhra pradesh">ANDHRA PRADESH</option>
-     <option value="BIHAR">BIHAR</option>
-     <option value="GOA">GOA</option>
-     <option value="MAHARASTA">MAHARASTRA</option>
- </SELECT><br>
- USERNAME:<input type="TEXT" name="c"     ><br>
- PASSWORD:<input type="password" name="c++"> <BR>
+     <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select a country</option>
+      <option value="Bharath">Bharath</option>
+      <option value="USA">USA</option>
+      <option value="Canada">Canada</option>
+      <option value="UK">UK</option>
+      <option value="Australia">Australia</option></select>
+ <br>
+ USERNAME:<input type="text" name="username"     ><br>
+ PASSWORD:<input type="password" name="password"> <BR>
  <INPUT TYPE="submit">
 </CENTER>
 </li>
-
+</form>
 <script>
-function myFunction() {
+  function myFunction(){
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";

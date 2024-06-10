@@ -54,7 +54,7 @@ body {
 }
 li{
                 background:url("b.jpg");background-repeat: no-repeat;background-size: cover;
-                color: rgb(7, 7, 7);
+                color: rgb(14, 3, 3);
                 margin-left:400px;
                 padding:0px;
                 height: 80vh;
@@ -68,26 +68,27 @@ li{
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="home" class="active"><CENTER><H1>TOURISM</H1></CENTER></a>
+  <a href="home" class="active"><CENTER><H1>HOLIDAY TRIP</H1></CENTER></a>
   <div id="myLinks">
     <a href="Home.html">HOME</a>
     <a href="register.html">REGISTER</a>
     <a href="Login.html">LOGIN</a>
-    <a href="about us.html">ABOUT US</a>
+    <a href="ABOUT US.html">ABOUT US</a>
     <a href="contact us.html">CONTACT US</a>
-    <a href="services.html">SERVICES</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div>
-    <li><center>
+</div><br>
+<form action onsubmit="return f1(this)">
+    <li><center><BR><BR>
     <h1>CONTACT US</h1>
     <h3>FIRST NAME:</h3><input type="text" name="first name">  <br>
     <h3>EMAIL:</h3><input type="email" name="EMAIL"><br>
     <h3>PHONE NUMBER:</h3><input type="NUMBER" name="M number"><br>
-    <h3>MESSAGE:</h3><input type="text" name="message"><br></center>
-    </li>
+    <h3>MESSAGE:</h3><input type="text" name="message"><br>
+    <input type="submit"></center>
+    </li></form>
 <script>
 function myFunction() {
   var x = document.getElementById("myLinks");
@@ -95,7 +96,9 @@ function myFunction() {
     x.style.display = "none";
   } else {
     x.style.display = "block";
-  }
+  }}
+  function f1(){
+ alert("Our agent will contact yoou shortly")
 }
 </script>
 

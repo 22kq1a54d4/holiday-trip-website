@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  ;
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position:relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position:inherit;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 0px;
+}
+.taj-button{ 
+  a:link{
+                color: rgb(111, 168, 24);
+                text-decoration: none;
+              }
+              a:visited {
+                color: rgb(10, 8, 9);
+                text-decoration: none;
+              }
+              
+              a:hover {
+                color: rgb(190, 49, 68);
+                text-decoration: underline;
+              }
+              a:active {
+                color: blue;
+                text-decoration: none;
+              }
+    background-color: rgb(149, 148, 237);
+    color: #333;
+    cursor: pointer;
+    margin-left: 700px;
+    height:40px;
+    width:80px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+body{
+  background:url("side.jpg");background-repeat: no-repeat;background-size: cover;
+}
+center{
+  margin-right: 500px;
+}
+</style>
+</head>
+<body>
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="home" class="active"><CENTER><H1>HOLIDAY TRIP</H1></CENTER></a>
+  <div id="myLinks">
+    <a href="Home.html">HOME</a>
+    <a href="register.html">REGISTER</a>
+    <a href="Login.html">LOGIN</a>
+    <a href="ABOUT US.html">ABOUT US</a>
+    <a href="contact us.html">CONTACT US</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div><br>
+<br>
+<center>
+  <img src="golden temple.jpg"  alt="workplace" usemap="#work2" width="700" height="400" style="">
+    <map name="work2">
+        <area shape="default" alt="computer" href="taj mahal.html">
+    </map></center>
+    <h2>Welcome To Our Travels!!</h2>
+   <p>Thank you for choosing our travels.<br>
+    </p>
+    <H3>Travelling Expenses:</H3>
+      <ul>
+        <li>The orginal ticket price for adult(M/F): 11000/-</li>
+        <ul><li>For childern:6000/- per person</li>
+          <li>For senior citizens:7000/- per person</li></ul>
+        </ul>
+        <H3>Luggage Expenses:</H3>
+        <p>The weight of the luggage must be less than 200kg for each person.<br>
+          The cost will be allocated based on the weight.</p>
+          <H3>Food:</H3>
+          <p><ul><li>Snack and drinks are free.</li>
+            <li>Different styles of cuisines will be available.<a href="https://en.m.wikipedia.org/wiki/List_of_cuisines">See here</a></a></li>
+            <li>The food cost will be 500/- per day to every one.</li>
+            <li>For children and senior citizens special care will be taken.</li>
+            <li>The people who have diabites and any other health issues please inform !! We will prepare a healthy diet for them</li></ul></p>
+            <h3>Medication:</h3>
+            <p>Free medicines will be given for cold,cough and other health issues.</p>
+          <H3>Offers::</H3>
+          <p><ul>
+            <li>For first booking : 50%off of travel expenses</li>
+            <ul><li>For childern: Gift hampers will be given.</li>
+              <li>For senior citizens:Free special gifts.</li></ul>
+              <li>Coupons will be given based on their destination.</li>
+              <li></li>
+              </ul></p>
+              <h3>Cancellations:</h3>
+              <p>According to our policy,If you cancel the ticket:<br>
+                <ul><li>After booking,In the period of three days there will be no cancellation fee.</li>
+                  <li>With in a week ,50% will be the cancellation fee and remaining amout will be refund into your account.</li>
+                  <li>Before departing,70% will be the cancellation fee and remaining amount will be refund into your account.</li></ul></p>
+          <H3>Security:</H3>
+          <p>You luggage will be checked before departing.We hope every one will follow our guidelines.</p>
+<h3>For more details <a href="contact us.html">contact us</a></h3>
+    <button class=taj-button>
+        <a href="booking.html">BOOK NOW</a>
+       </button>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
